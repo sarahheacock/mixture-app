@@ -1,0 +1,43 @@
+{
+    "defaultSeverity": "error", // not in eos native
+    "extends": [
+        "tslint:recommended",
+        "tslint-immutable",
+        "tslint-react"
+    ],
+    "jsRules": {},
+    "rules": {
+        "arrow-parens": false,
+        "indent": [true, "spaces", 4],
+        "interface-name": [true, "never-prefix"],
+        "member-access": [true, "no-public"],
+        "no-consecutive-blank-lines": [true, 2],
+        "no-console": true,
+        "no-inferrable-types": [true, "ignore-properties"],
+        "no-null-keyword": false, // changed since render sometimes returns null
+        "no-parameter-reassignment": true,
+        "no-switch-case-fallthrough": true,
+        "object-literal-sort-keys": false,
+        "ordered-imports": false,
+        "prefer-template": [true, "allow-single-concat"],
+        "space-within-parens": [true, 0],
+        "triple-equals": true,
+        "typedef": {
+            "options": [
+                "call-signature",
+                "arrow-call-signature",
+                "property-declaration",
+                "member-variable-declaration"
+            ]
+        },
+
+        // tslint-immutable rules
+        "readonly-array": true,
+
+        // tslint-react rules
+        "jsx-no-lambda": true,
+        "jsx-self-close": true,
+        "jsx-space-before-trailing-slash": true
+    },
+    "rulesDirectory": []
+}
